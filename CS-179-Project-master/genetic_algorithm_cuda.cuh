@@ -34,13 +34,14 @@ namespace genetic_algorithm {
         size_t island_count_per_kingdom;
         size_t island_population;
     };
-    
+#ifdef __CUDACC__
+    #warning using nvcc
     template <typename Spawn, typename Evaluate, typename Mutate, typename Cross>
     __global__
     void cudaSimulationKernel(genome_t *inboxes, specification_t specification, Spawn spawn, Evaluate evaluate, Mutate mutate, Cross cross) {
         extern __shared__ thread_data shared_memory[];
         thread_data *thread_memory = shared_memory + threadIdx.x;
-        
+
         island_index index;
         index.kingdom_index = blockIdx.x / specification.island_count_per_kingdom;
         index.cross_section_index = blockIdx.x % specification.island_count_per_kingdom;
@@ -49,10 +50,10 @@ namespace genetic_algorithm {
         // Note we can simply see with the thread index since we don't care to have random
         // behavior between multiple invocations, only between threads
         curand_init(blockIdx.x * blockDim.x + threadIdx.x, 1, 0, &thread_memory->rand_state);
-        
+
         // Initialize individual
         thread_memory->genome = spawn(index, &thread_memory->rand_state);
-        
+
         for (size_t i = 0; i < specification.max_iterations; i++) {
             // Evaluate individual
             thread_memory->fitness = evaluate(index, thread_memory->genome, mailboxes(index.cross_section_index), &thread_memory->rand_state);
@@ -60,8 +61,8 @@ namespace genetic_algorithm {
             // Perform reduction
             for (size_t bound = blockDim.x >> 1; threadIdx.x < bound; bound >>= 1) {
                 thread_data *other_memory = thread_memory + bound;
-                syncthreads();
-                
+                __syncthreads();
+
                 // Copy the maximum value of thread and other to the opposite
                 if (thread_memory->fitness > other_memory->fitness) {
                     // Note that this case must be first since comparison with NaN
@@ -73,7 +74,7 @@ namespace genetic_algorithm {
                     other_memory->fitness = thread_memory->fitness;
                 }
             }
-            
+
             // Perform migration of elite individual
             if (threadIdx.x == 0) {
                 // Outward
@@ -86,7 +87,7 @@ namespace genetic_algorithm {
                     // Note that this thread's genome in shared memory is the best since we reduced left
                     *inbox(next_index) = thread_memory->genome;
                 }
-                
+
                 // Inward
                 {
                     // Migrate elite individual from island into the population
@@ -96,27 +97,33 @@ namespace genetic_algorithm {
                     (shared_memory + 1)->genome = *inbox(index);
                 }
             }
-            
+
             // Perform mutation
             mutate(index, threadIdx.x, &thread_memory->genome, &thread_memory->rand_state);
-            
+
             // Perform crosses
             if (threadIdx.x % 2 == 1) {
                 shared_memory[threadIdx.x].genome = cross(
-                    index,
-                    shared_memory[threadIdx.x - 1].genome,
-                    shared_memory[threadIdx.x].genome,
-                    &thread_memory->rand_state
+                        index,
+                        shared_memory[threadIdx.x - 1].genome,
+                        shared_memory[threadIdx.x].genome,
+                        &thread_memory->rand_state
                 );
             }
         }
     }
-    
+#endif
+//    template <typename Spawn, typename Evaluate, typename Mutate, typename Cross>
+//    __global__
+//    void cudaSimulationKernel(genome_t *inboxes, specification_t specification, Spawn spawn, Evaluate evaluate, Mutate mutate, Cross cross);
+
     template <typename Spawn, typename Evaluate, typename Mutate, typename Cross>
     void cudaCallSimulation(const size_t blocks, const size_t threadsPerBlock, genome_t * const inboxes, specification_t specification, Spawn spawn, Evaluate evaluate, Mutate mutate, Cross cross) {
         unsigned bytesPerBlock = sizeof(thread_data) * threadsPerBlock;
-        
+#ifdef __CUDACC__
+        #warning using nvcc
         cudaSimulationKernel<<<blocks, threadsPerBlock, bytesPerBlock>>>(inboxes, specification, spawn, evaluate, mutate, cross);
+#endif
     }
 }
 
