@@ -1,0 +1,16 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/bili/Lernen/Essay_SI/CUDA_Practice/Chapter02/02_memory_overview/01_sgemm/sgemm.cu
+cuda_runtime.h
+/home/bili/Lernen/Essay_SI/CUDA_Practice/Chapter02/02_memory_overview/01_sgemm/cuda_runtime.h
+device_launch_parameters.h
+/home/bili/Lernen/Essay_SI/CUDA_Practice/Chapter02/02_memory_overview/01_sgemm/device_launch_parameters.h
+stdio.h
+-
+

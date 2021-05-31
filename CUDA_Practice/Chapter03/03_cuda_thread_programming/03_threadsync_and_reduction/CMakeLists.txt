@@ -1,0 +1,18 @@
+cmake_minimum_required(VERSION 3.16)
+project(CUDA_Practice CUDA)
+
+set(CMAKE_CUDA_STANDARD 14)
+
+file(GLOB sources ./*.cu)
+foreach(sourcefile ${sources})
+    file(RELATIVE_PATH filename ${CMAKE_SOURCE_DIR} ${sourcefile})
+    get_filename_component(local_file "${filename}" DIRECTORY)
+    MESSAGE ("${CMAKE_RUNTIME_OUTPUT_DIRECTORY}")
+    set(CMAKE_CURRENT_SOURCE_DIR ./${local_file})
+    get_filename_component(file_name "${filename}" NAME_WLE)
+    MESSAGE ("${CMAKE_CURRENT_SOURCE_DIR}")
+    set(EXECUTABLE_OUTPUT_PATH ${CMAKE_CURRENT_SOURCE_DIR})
+    add_executable( ${file_name} ${sourcefile} )
+    #target_link_libraries( ${file}  )
+    set_target_properties(${file_name}    PROPERTIES    CUDA_SEPARABLE_COMPILATION ON)
+endforeach(sourcefile ${sources})
