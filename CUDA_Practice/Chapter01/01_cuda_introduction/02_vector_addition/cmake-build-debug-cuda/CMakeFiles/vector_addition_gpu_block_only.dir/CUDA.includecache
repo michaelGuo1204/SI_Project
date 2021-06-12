@@ -1,0 +1,14 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/bili/Lernen/Essay_SI/CUDA_Practice/Chapter01/01_cuda_introduction/02_vector_addition/vector_addition_gpu_block_only.cu
+stdio.h
+-
+stdlib.h
+-
+

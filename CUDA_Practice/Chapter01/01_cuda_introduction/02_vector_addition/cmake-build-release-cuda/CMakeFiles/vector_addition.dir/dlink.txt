@@ -1,0 +1,1 @@
+/usr/local/cuda-10.2/bin/nvcc -forward-unknown-to-host-compiler -O3 -DNDEBUG -Xcompiler=-fPIC -Wno-deprecated-gpu-targets -shared -dlink CMakeFiles/vector_addition.dir/vector_addition.cu.o -o CMakeFiles/vector_addition.dir/cmake_device_link.o  -lcudadevrt -lcudart_static  -L"/usr/local/cuda-10.2/lib64"

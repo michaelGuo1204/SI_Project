@@ -1,0 +1,1 @@
+/usr/local/cuda-10.2/bin/g++  CMakeFiles/vector_addition_gpu_block_only.dir/vector_addition_gpu_block_only.cu.o CMakeFiles/vector_addition_gpu_block_only.dir/cmake_device_link.o -o vector_addition_gpu_block_only  -lcudadevrt -lcudart_static  -L"/usr/local/cuda-10.2/targets/x86_64-linux/lib/stubs" -L"/usr/local/cuda-10.2/targets/x86_64-linux/lib" -lrt -lpthread -ldl

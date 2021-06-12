@@ -1,0 +1,14 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/bili/Lernen/Essay_SI/CUDA_Practice/Chapter01/01_cuda_introduction/01_hello_world/hello_world.cu
+stdio.h
+-
+stdlib.h
+-
+

@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6"/>
+	<Project>
+		<Option title="CUDA_Practice"/>
+		<Option makefile_is_custom="1"/>
+		<Option compiler="gcc"/>
+		<Option virtualFolders="CMake Files\;"/>
+		<Build>
+			<Target title="all">
+				<Option working_dir="/home/bili/Lernen/Essay_SI/CUDA_Practice/Chapter01/01_cuda_introduction/01_hello_world/cmake-build-release-cuda"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j16 -f &quot;/home/bili/Lernen/Essay_SI/CUDA_Practice/Chapter01/01_cuda_introduction/01_hello_world/cmake-build-release-cuda/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make -j16 -f &quot;/home/bili/Lernen/Essay_SI/CUDA_Practice/Chapter01/01_cuda_introduction/01_hello_world/cmake-build-release-cuda/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j16 -f &quot;/home/bili/Lernen/Essay_SI/CUDA_Practice/Chapter01/01_cuda_introduction/01_hello_world/cmake-build-release-cuda/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j16 -f &quot;/home/bili/Lernen/Essay_SI/CUDA_Practice/Chapter01/01_cuda_introduction/01_hello_world/cmake-build-release-cuda/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rebuild_cache">
+				<Option working_dir="/home/bili/Lernen/Essay_SI/CUDA_Practice/Chapter01/01_cuda_introduction/01_hello_world/cmake-build-release-cuda"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j16 -f &quot;/home/bili/Lernen/Essay_SI/CUDA_Practice/Chapter01/01_cuda_introduction/01_hello_world/cmake-build-release-cuda/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/make -j16 -f &quot;/home/bili/Lernen/Essay_SI/CUDA_Practice/Chapter01/01_cuda_introduction/01_hello_world/cmake-build-release-cuda/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j16 -f &quot;/home/bili/Lernen/Essay_SI/CUDA_Practice/Chapter01/01_cuda_introduction/01_hello_world/cmake-build-release-cuda/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j16 -f &quot;/home/bili/Lernen/Essay_SI/CUDA_Practice/Chapter01/01_cuda_introduction/01_hello_world/cmake-build-release-cuda/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="edit_cache">
+				<Option working_dir="/home/bili/Lernen/Essay_SI/CUDA_Practice/Chapter01/01_cuda_introduction/01_hello_world/cmake-build-release-cuda"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j16 -f &quot;/home/bili/Lernen/Essay_SI/CUDA_Practice/Chapter01/01_cuda_introduction/01_hello_world/cmake-build-release-cuda/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/make -j16 -f &quot;/home/bili/Lernen/Essay_SI/CUDA_Practice/Chapter01/01_cuda_introduction/01_hello_world/cmake-build-release-cuda/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j16 -f &quot;/home/bili/Lernen/Essay_SI/CUDA_Practice/Chapter01/01_cuda_introduction/01_hello_world/cmake-build-release-cuda/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j16 -f &quot;/home/bili/Lernen/Essay_SI/CUDA_Practice/Chapter01/01_cuda_introduction/01_hello_world/cmake-build-release-cuda/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="hello_world">
+				<Option output="/home/bili/Lernen/Essay_SI/CUDA_Practice/Chapter01/01_cuda_introduction/01_hello_world/cmake-build-release-cuda/hello_world" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="./"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j16 -f &quot;/home/bili/Lernen/Essay_SI/CUDA_Practice/Chapter01/01_cuda_introduction/01_hello_world/cmake-build-release-cuda/Makefile&quot;  VERBOSE=1 hello_world"/>
+					<CompileFile command="/usr/bin/make -j16 -f &quot;/home/bili/Lernen/Essay_SI/CUDA_Practice/Chapter01/01_cuda_introduction/01_hello_world/cmake-build-release-cuda/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j16 -f &quot;/home/bili/Lernen/Essay_SI/CUDA_Practice/Chapter01/01_cuda_introduction/01_hello_world/cmake-build-release-cuda/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j16 -f &quot;/home/bili/Lernen/Essay_SI/CUDA_Practice/Chapter01/01_cuda_introduction/01_hello_world/cmake-build-release-cuda/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="hello_world/fast">
+				<Option output="/home/bili/Lernen/Essay_SI/CUDA_Practice/Chapter01/01_cuda_introduction/01_hello_world/cmake-build-release-cuda/hello_world" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="./"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j16 -f &quot;/home/bili/Lernen/Essay_SI/CUDA_Practice/Chapter01/01_cuda_introduction/01_hello_world/cmake-build-release-cuda/Makefile&quot;  VERBOSE=1 hello_world/fast"/>
+					<CompileFile command="/usr/bin/make -j16 -f &quot;/home/bili/Lernen/Essay_SI/CUDA_Practice/Chapter01/01_cuda_introduction/01_hello_world/cmake-build-release-cuda/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j16 -f &quot;/home/bili/Lernen/Essay_SI/CUDA_Practice/Chapter01/01_cuda_introduction/01_hello_world/cmake-build-release-cuda/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j16 -f &quot;/home/bili/Lernen/Essay_SI/CUDA_Practice/Chapter01/01_cuda_introduction/01_hello_world/cmake-build-release-cuda/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="/home/bili/Lernen/Essay_SI/CUDA_Practice/Chapter01/01_cuda_introduction/01_hello_world/hello_world.cu">
+			<Option target="hello_world"/>
+		</Unit>
+		<Unit filename="/home/bili/Lernen/Essay_SI/CUDA_Practice/Chapter01/01_cuda_introduction/01_hello_world/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>

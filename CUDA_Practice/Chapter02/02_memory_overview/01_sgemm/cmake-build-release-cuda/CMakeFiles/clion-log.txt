@@ -1,0 +1,2 @@
+Cannot generate 'Release-CUDA' into /home/bili/Lernen/Essay_SI/CUDA_Practice/Chapter02/02_memory_overview/01_sgemm/cmake-build-release-cuda
+CMakeCache.txt is found in the project dir, only in-source generation will be performed.

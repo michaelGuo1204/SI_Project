@@ -1,0 +1,10 @@
+/home/bili/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/203.7148.70/bin/cmake/linux/bin/cmake -DCMAKE_BUILD_TYPE=Release -DCMAKE_C_COMPILER=/usr/local/cuda/bin/gcc -DCMAKE_CXX_COMPILER=/usr/local/cuda/bin/g++ -G "CodeBlocks - Unix Makefiles" /home/bili/Lernen/Essay_SI/CUDA_Practice/Chapter01/01_cuda_introduction/02_vector_addition
+
+./
+
+./
+
+./
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/bili/Lernen/Essay_SI/CUDA_Practice/Chapter01/01_cuda_introduction/02_vector_addition/cmake-build-release-cuda

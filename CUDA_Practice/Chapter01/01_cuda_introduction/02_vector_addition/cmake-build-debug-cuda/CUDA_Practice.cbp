@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6"/>
+	<Project>
+		<Option title="CUDA_Practice"/>
+		<Option makefile_is_custom="1"/>
+		<Option compiler="gcc"/>
+		<Option virtualFolders="CMake Files\;"/>
+		<Build>
+			<Target title="all">
+				<Option working_dir="/home/bili/Lernen/Essay_SI/CUDA_Practice/Chapter01/01_cuda_introduction/02_vector_addition/cmake-build-debug-cuda"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j16 -f &quot;/home/bili/Lernen/Essay_SI/CUDA_Practice/Chapter01/01_cuda_introduction/02_vector_addition/cmake-build-debug-cuda/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make -j16 -f &quot;/home/bili/Lernen/Essay_SI/CUDA_Practice/Chapter01/01_cuda_introduction/02_vector_addition/cmake-build-debug-cuda/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j16 -f &quot;/home/bili/Lernen/Essay_SI/CUDA_Practice/Chapter01/01_cuda_introduction/02_vector_addition/cmake-build-debug-cuda/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j16 -f &quot;/home/bili/Lernen/Essay_SI/CUDA_Practice/Chapter01/01_cuda_introduction/02_vector_addition/cmake-build-debug-cuda/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rebuild_cache">
+				<Option working_dir="/home/bili/Lernen/Essay_SI/CUDA_Practice/Chapter01/01_cuda_introduction/02_vector_addition/cmake-build-debug-cuda"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j16 -f &quot;/home/bili/Lernen/Essay_SI/CUDA_Practice/Chapter01/01_cuda_introduction/02_vector_addition/cmake-build-debug-cuda/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/make -j16 -f &quot;/home/bili/Lernen/Essay_SI/CUDA_Practice/Chapter01/01_cuda_introduction/02_vector_addition/cmake-build-debug-cuda/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j16 -f &quot;/home/bili/Lernen/Essay_SI/CUDA_Practice/Chapter01/01_cuda_introduction/02_vector_addition/cmake-build-debug-cuda/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j16 -f &quot;/home/bili/Lernen/Essay_SI/CUDA_Practice/Chapter01/01_cuda_introduction/02_vector_addition/cmake-build-debug-cuda/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="edit_cache">
+				<Option working_dir="/home/bili/Lernen/Essay_SI/CUDA_Practice/Chapter01/01_cuda_introduction/02_vector_addition/cmake-build-debug-cuda"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j16 -f &quot;/home/bili/Lernen/Essay_SI/CUDA_Practice/Chapter01/01_cuda_introduction/02_vector_addition/cmake-build-debug-cuda/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/make -j16 -f &quot;/home/bili/Lernen/Essay_SI/CUDA_Practice/Chapter01/01_cuda_introduction/02_vector_addition/cmake-build-debug-cuda/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j16 -f &quot;/home/bili/Lernen/Essay_SI/CUDA_Practice/Chapter01/01_cuda_introduction/02_vector_addition/cmake-build-debug-cuda/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j16 -f &quot;/home/bili/Lernen/Essay_SI/CUDA_Practice/Chapter01/01_cuda_introduction/02_vector_addition/cmake-build-debug-cuda/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="vector_addition_gpu_block_only">
+				<Option output="/home/bili/Lernen/Essay_SI/CUDA_Practice/Chapter01/01_cuda_introduction/02_vector_addition/cmake-build-debug-cuda/vector_addition_gpu_block_only" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="./"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j16 -f &quot;/home/bili/Lernen/Essay_SI/CUDA_Practice/Chapter01/01_cuda_introduction/02_vector_addition/cmake-build-debug-cuda/Makefile&quot;  VERBOSE=1 vector_addition_gpu_block_only"/>
+					<CompileFile command="/usr/bin/make -j16 -f &quot;/home/bili/Lernen/Essay_SI/CUDA_Practice/Chapter01/01_cuda_introduction/02_vector_addition/cmake-build-debug-cuda/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j16 -f &quot;/home/bili/Lernen/Essay_SI/CUDA_Practice/Chapter01/01_cuda_introduction/02_vector_addition/cmake-build-debug-cuda/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j16 -f &quot;/home/bili/Lernen/Essay_SI/CUDA_Practice/Chapter01/01_cuda_introduction/02_vector_addition/cmake-build-debug-cuda/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="vector_addition_gpu_block_only/fast">
+				<Option output="/home/bili/Lernen/Essay_SI/CUDA_Practice/Chapter01/01_cuda_introduction/02_vector_addition/cmake-build-debug-cuda/vector_addition_gpu_block_only" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="./"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j16 -f &quot;/home/bili/Lernen/Essay_SI/CUDA_Practice/Chapter01/01_cuda_introduction/02_vector_addition/cmake-build-debug-cuda/Makefile&quot;  VERBOSE=1 vector_addition_gpu_block_only/fast"/>
+					<CompileFile command="/usr/bin/make -j16 -f &quot;/home/bili/Lernen/Essay_SI/CUDA_Practice/Chapter01/01_cuda_introduction/02_vector_addition/cmake-build-debug-cuda/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j16 -f &quot;/home/bili/Lernen/Essay_SI/CUDA_Practice/Chapter01/01_cuda_introduction/02_vector_addition/cmake-build-debug-cuda/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j16 -f &quot;/home/bili/Lernen/Essay_SI/CUDA_Practice/Chapter01/01_cuda_introduction/02_vector_addition/cmake-build-debug-cuda/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="vector_addition">
+				<Option output="/home/bili/Lernen/Essay_SI/CUDA_Practice/Chapter01/01_cuda_introduction/02_vector_addition/cmake-build-debug-cuda/vector_addition" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="./"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j16 -f &quot;/home/bili/Lernen/Essay_SI/CUDA_Practice/Chapter01/01_cuda_introduction/02_vector_addition/cmake-build-debug-cuda/Makefile&quot;  VERBOSE=1 vector_addition"/>
+					<CompileFile command="/usr/bin/make -j16 -f &quot;/home/bili/Lernen/Essay_SI/CUDA_Practice/Chapter01/01_cuda_introduction/02_vector_addition/cmake-build-debug-cuda/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j16 -f &quot;/home/bili/Lernen/Essay_SI/CUDA_Practice/Chapter01/01_cuda_introduction/02_vector_addition/cmake-build-debug-cuda/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j16 -f &quot;/home/bili/Lernen/Essay_SI/CUDA_Practice/Chapter01/01_cuda_introduction/02_vector_addition/cmake-build-debug-cuda/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="vector_addition/fast">
+				<Option output="/home/bili/Lernen/Essay_SI/CUDA_Practice/Chapter01/01_cuda_introduction/02_vector_addition/cmake-build-debug-cuda/vector_addition" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="./"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j16 -f &quot;/home/bili/Lernen/Essay_SI/CUDA_Practice/Chapter01/01_cuda_introduction/02_vector_addition/cmake-build-debug-cuda/Makefile&quot;  VERBOSE=1 vector_addition/fast"/>
+					<CompileFile command="/usr/bin/make -j16 -f &quot;/home/bili/Lernen/Essay_SI/CUDA_Practice/Chapter01/01_cuda_introduction/02_vector_addition/cmake-build-debug-cuda/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j16 -f &quot;/home/bili/Lernen/Essay_SI/CUDA_Practice/Chapter01/01_cuda_introduction/02_vector_addition/cmake-build-debug-cuda/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j16 -f &quot;/home/bili/Lernen/Essay_SI/CUDA_Practice/Chapter01/01_cuda_introduction/02_vector_addition/cmake-build-debug-cuda/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="vector_addition_gpu_thread_only">
+				<Option output="/home/bili/Lernen/Essay_SI/CUDA_Practice/Chapter01/01_cuda_introduction/02_vector_addition/cmake-build-debug-cuda/vector_addition_gpu_thread_only" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="./"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j16 -f &quot;/home/bili/Lernen/Essay_SI/CUDA_Practice/Chapter01/01_cuda_introduction/02_vector_addition/cmake-build-debug-cuda/Makefile&quot;  VERBOSE=1 vector_addition_gpu_thread_only"/>
+					<CompileFile command="/usr/bin/make -j16 -f &quot;/home/bili/Lernen/Essay_SI/CUDA_Practice/Chapter01/01_cuda_introduction/02_vector_addition/cmake-build-debug-cuda/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j16 -f &quot;/home/bili/Lernen/Essay_SI/CUDA_Practice/Chapter01/01_cuda_introduction/02_vector_addition/cmake-build-debug-cuda/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j16 -f &quot;/home/bili/Lernen/Essay_SI/CUDA_Practice/Chapter01/01_cuda_introduction/02_vector_addition/cmake-build-debug-cuda/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="vector_addition_gpu_thread_only/fast">
+				<Option output="/home/bili/Lernen/Essay_SI/CUDA_Practice/Chapter01/01_cuda_introduction/02_vector_addition/cmake-build-debug-cuda/vector_addition_gpu_thread_only" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="./"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j16 -f &quot;/home/bili/Lernen/Essay_SI/CUDA_Practice/Chapter01/01_cuda_introduction/02_vector_addition/cmake-build-debug-cuda/Makefile&quot;  VERBOSE=1 vector_addition_gpu_thread_only/fast"/>
+					<CompileFile command="/usr/bin/make -j16 -f &quot;/home/bili/Lernen/Essay_SI/CUDA_Practice/Chapter01/01_cuda_introduction/02_vector_addition/cmake-build-debug-cuda/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j16 -f &quot;/home/bili/Lernen/Essay_SI/CUDA_Practice/Chapter01/01_cuda_introduction/02_vector_addition/cmake-build-debug-cuda/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j16 -f &quot;/home/bili/Lernen/Essay_SI/CUDA_Practice/Chapter01/01_cuda_introduction/02_vector_addition/cmake-build-debug-cuda/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="/home/bili/Lernen/Essay_SI/CUDA_Practice/Chapter01/01_cuda_introduction/02_vector_addition/vector_addition.cu">
+			<Option target="vector_addition"/>
+		</Unit>
+		<Unit filename="/home/bili/Lernen/Essay_SI/CUDA_Practice/Chapter01/01_cuda_introduction/02_vector_addition/vector_addition_gpu_block_only.cu">
+			<Option target="vector_addition_gpu_block_only"/>
+		</Unit>
+		<Unit filename="/home/bili/Lernen/Essay_SI/CUDA_Practice/Chapter01/01_cuda_introduction/02_vector_addition/vector_addition_gpu_thread_only.cu">
+			<Option target="vector_addition_gpu_thread_only"/>
+		</Unit>
+		<Unit filename="/home/bili/Lernen/Essay_SI/CUDA_Practice/Chapter01/01_cuda_introduction/02_vector_addition/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>
