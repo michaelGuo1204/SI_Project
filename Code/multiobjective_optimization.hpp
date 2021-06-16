@@ -2,8 +2,15 @@
 
 #include <vector>
 #include <cstring>
+#include <iostream>
 #include "genetic_algorithm.hpp"
 
+struct Parameter{
+  double male_Sf;
+  double male_k;
+  double female_Sf;
+  double female_k;
+}parameter;
 // inspired by:
 // http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.36.5013&rep=rep1&type=pdf
 
@@ -16,10 +23,14 @@
 // of the value.
 #define func(function_index, value) case function_index: result = value; break;
 
-#define optimize(iterations, arguments, fitness, functions) ({\
+#define optimize(iterations, arguments,parameters, fitness, functions) ({\
     using namespace genetic_algorithm;\
     const size_t argument_count = countof(arguments);\
-    const size_t function_count = countof(fitness);\
+    const size_t function_count = countof(fitness);                      \
+    const int male_Sf=parameters.male_Sf;\
+    const int male_k=parameters.male_k;\
+    const int female_Sf=parameters.female_Sf;\
+    const int female_k=parameters.female_k;                                                                     \
     simulate(\
         /* results: */ arguments,\
         /* specifications: */ {\
@@ -31,7 +42,7 @@
         /* spawn: */ [] __device__ (island_index index, curandState_t *rand_state) -> fitness_t {\
             return 20 * curand_uniform(rand_state) - 10;\
         },\
-        /* evaluate: */ [argument_count] __device__ (island_index index, genome_t test_genome, genome_t *competitor_genomes,curandState_t *rand_state) -> fitness_t {\
+        /* evaluate: */ [argument_count,male_Sf,male_k,female_Sf,female_k] __device__ (island_index index, genome_t test_genome, genome_t *competitor_genomes,curandState_t *rand_state) -> fitness_t {\
             float args[argument_count];\
             for (size_t i = 0; i < argument_count; i++) {\
                 if (i == index.kingdom_index) {\
@@ -41,7 +52,7 @@
                 }\
             }\
             float result = -1;\
-            switch(index.kingdom_index) functions\
+            switch(index.kingdom_index) functions                        \
             return result;\
         },\
         /* mutate: */ [] __device__ (island_index index, size_t genome_index, genome_t *genome, curandState_t *rand_state) {\
