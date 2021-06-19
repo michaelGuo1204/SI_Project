@@ -29,8 +29,9 @@ if __name__=="__main__":
                     return_stream=subprocess.check_output([programme,str(male_sf),str(male_k),str(female_sf),str(female_k)])
                     returntext=return_stream.decode('utf-8')
                     returndata=returntext.split(',')
+                    returndata.insert(0,'({},{},{},{})'.format(male_sf,male_k,female_sf,female_k))
                     dia={cul_names[i]:returndata[i] for i in range(len(returndata))}
-                    dia["Parameter"]='({},{},{},{})'.format(male_sf,male_k,female_sf,female_k)
+                    #dia["Parameter"]='({},{},{},{})'.format(male_sf,male_k,female_sf,female_k)
                     csv_module.writerow(dia)
                     pbar.update(1)
                 pbar_female_k.reset()
